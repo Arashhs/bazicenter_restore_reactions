@@ -1,0 +1,22 @@
+{
+    "manifest_version": 2,
+    "name": "RestoreBCReactions",
+    "description": "Restore the reactions to BaziCenter's posts",
+    "version": "1.0",
+    "icons": {
+        "16": "/images/favicon-16x16.png",
+        "48": "/images/favicon-48x48.png",
+        "128": "/images/favicon-128x128.png"
+    },
+    "page_action": {
+        "default_icon": {
+            "16": "/images/favicon-16x16.png",
+            "48": "/images/favicon-48x48.png",
+            "128": "/images/favicon-128x128.png"
+        }
+    },
+    "content_scripts": [{
+        "matches":["https://forum.bazicenter.com/threads/*"],
+        "js": ["script.js"]
+    }]
+}
